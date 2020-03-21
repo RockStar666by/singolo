@@ -9,41 +9,63 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
     <title>Singolo</title>
+
 </head>
 
 <body>
+    <div id="anchor1"></div>
+
     <div class="body-container">
-        <section class="home">
+        <section class="home" id="myHeader">
             <div class="home-content">
                 <div class="logo-home">
                     <h1 class="singolo-home">SINGOLO<span class="singolo">*</span></h1>
                 </div>
                 <nav class="navbar">
-                    <ul class="list-middot">
-                        <li class="menu-list"><a class="menu-text" href="#">HOME</a></li>
-                        <li class="menu-list"><a class="menu-text" href="#">SERVICES</a></li>
-                        <li class="menu-list"><a class="menu-text" href="#">PORTFOLIO</a></li>
-                        <li class="menu-list"><a class="menu-text" href="#">ABOUT</a></li>
-                        <li class="menu-list"><a class="menu-text" href="#">CONTACT</a></li>
+                    <ul class="list-middot" id="menu">
+                        <li class="menu-list"><a class="menu-text" href="#anchor1">HOME</a></li>
+                        <li class="menu-list"><a class="menu-text" href="#anchor2">SERVICES</a></li>
+                        <li class="menu-list"><a class="menu-text" href="#anchor3">PORTFOLIO</a></li>
+                        <li class="menu-list"><a class="menu-text" href="#anchor4">ABOUT</a></li>
+                        <li class="menu-list"><a class="menu-text" href="#anchor5">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="bottom1"></div>
         </section>
+
+        <div class="spacer"></div>
         <div class="main">
             <div class="slider">
-                <div class="slider-container">
-                    <button class="button-left"><img src="assets/L_chev.svg" class="l_chev" alt="L_chev"></button>
-                    <div class="phone-container">
-                        <img src="assets/slider _phone _v.svg" class="phone-vert" alt="phone1">
-                        <img src="assets/slider_phone_h.svg" class="phone-hor" alt="phone2">
+
+                <div class="slider-container" id="slides">
+
+                    <div class="slide-1 elem active3">
+                        <div class="phones">
+                            <img src="assets/slider _phone _v.svg" class="phone-vert" id="phone-vert" alt="phone1">
+                            <div id="black-screen-1" class="hidden"></div>
+                            <img src="assets/slider_phone_h.svg" class="phone-hor" id="phone-hor" alt="phone2">
+                            <div id="black-screen-2" class="hidden"></div>
+                        </div>
                     </div>
-                    <button class="button-right"><img src="assets/R_chev.svg" class="r_chev" alt="R_chev"></button>
+
+                    <div class="slide-2 elem ">
+                        <div class="phones">
+                            <img src="assets/Slider.svg" alt="phone3">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="arrows">
+                    <img src="assets/L_chev.svg" class="arrow left " alt="L_chev">
+                    <img src="assets/R_chev.svg" class="arrow right" alt="R_chev">
                 </div>
             </div>
-            <div class="bottom2"></div>
+
+
         </div>
-        <section class="services">
+        <section class="services" id="anchor2">
             <div class="footer-container">
                 <div class="title">
                     <h2>Our Services</h2>
@@ -87,9 +109,9 @@
 
             </div>
 
-            <div class="bottom3"></div>
+
         </section>
-        <section class="portfolio-container">
+        <section class="portfolio-container" id="anchor3">
             <div class="logo">
                 <h1 class="title-logo">Portfolio</h1>
             </div>
@@ -98,29 +120,29 @@
             </div>
 
             <nav class="navbar2">
-                <ul class="portfolio-menu">
-                    <li><a class="all tag" href="#">All</a></li>
-                    <li><a class="web tag" href="#">Web Design</a></li>
-                    <li><a class="graph tag" href="#">Graphic Design</a></li>
-                    <li><a class="art tag" href="#">Artwork</a></li>
+                <ul class="portfolio-menu" id="menu2">
+                    <li class="menu3-item"><a class="all tag" id="all" href="#anchor3">All</a></li>
+                    <li class="menu3-item"><a class="web tag" href="#anchor3">Web Design</a></li>
+                    <li class="menu3-item"><a class="graph tag" href="#anchor3">Graphic Design</a></li>
+                    <li class="menu3-item"><a class="art tag" href="#anchor3">Artwork</a></li>
                 </ul>
             </nav>
-            <div class="images">
-                <img src="assets/img1.svg" alt="img1" class="row1 img">
-                <img src="assets/img2.svg" alt="img2" class="row1 img">
-                <img src="assets/img3.svg" alt="img3" class="row1 img">
-                <img src="assets/img4.svg" alt="img4" class="row1 img">
-                <img src="assets/img5.svg" alt="img5" class="row2 img">
-                <img src="assets/img6.svg" alt="img6" class="row2 img">
-                <img src="assets/img7.svg" alt="img7" class="row2 img">
-                <img src="assets/img8.svg" alt="img8" class="row2 img">
-                <img src="assets/img9.svg" alt="img9" class="row3 img">
-                <img src="assets/img10.svg" alt="img10" class="row3 img">
-                <img src="assets/img11.svg" alt="img11" class="row3 img">
-                <img src="assets/img12.svg" alt="img12" class="row3 img">
-            </div>
+            <ul id="images" class="images">
+                <li class="images-item"><img src="assets/img1.svg" alt="img1" class="row1 img"></li>
+                <li class="images-item"><img src="assets/img2.svg" alt="img2" class="row1 img"></li>
+                <li class="images-item"><img src="assets/img3.svg" alt="img3" class="row1 img"></li>
+                <li class="images-item"><img src="assets/img4.svg" alt="img4" class="row1 img"></li>
+                <li class="images-item"><img src="assets/img5.svg" alt="img5" class="row2 img"></li>
+                <li class="images-item"><img src="assets/img6.svg" alt="img6" class="row2 img"></li>
+                <li class="images-item"><img src="assets/img7.svg" alt="img7" class="row2 img"></li>
+                <li class="images-item"><img src="assets/img8.svg" alt="img8" class="row2 img"></li>
+                <li class="images-item"><img src="assets/img9.svg" alt="img9" class="row3 img"></li>
+                <li class="images-item"><img src="assets/img10.svg" alt="img10" class="row3 img"></li>
+                <li class="images-item"><img src="assets/img11.svg" alt="img11" class="row3 img"></li>
+                <li class="images-item"><img src="assets/img12.svg" alt="img12" class="row3 img"></li>
+            </ul>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="anchor4">
             <div class="about">
                 <h1 class="title-logo">About Us</h1>
             </div>
@@ -137,10 +159,10 @@
                         <h3 class="name">Adam Jensen</h3>
                         <h4 class="name-text"><span class="adam">Quisque luctus, quam eget molestie commodo, lacus purus</span> cursus purus, nec rutrum tellus dolor id lorem. </h4>
                         <div class="icons">
-                            <a href="#"><img src="assets/facebook.svg" alt="facebook" class="facebook icon"></a>
-                            <a href="#"><img src="assets/google.svg" alt="google" class="google icon"></a>
-                            <a href="#"><img src="assets/twitter.svg" alt="twitter" class="twitter icon"></a>
-                            <a href="#"><img src="assets/linkedin.svg" alt="linkedin" class="linked icon"></a>
+                            <a><img src="assets/facebook.svg" alt="facebook" class="facebook icon"></a>
+                            <a><img src="assets/google.svg" alt="google" class="google icon"></a>
+                            <a><img src="assets/twitter.svg" alt="twitter" class="twitter icon"></a>
+                            <a><img src="assets/linkedin.svg" alt="linkedin" class="linked icon"></a>
                         </div>
                     </div>
                 </div>
@@ -152,10 +174,10 @@
                         <h3 class="name">Desmond Miles</h3>
                         <h4 class="name-text"><span>Curabitur vestibulum eget mauris quis laoreet. Phasellus</span> in quam laoreet, viverra lacus ut, ultrices velit. </h4>
                         <div class="icons">
-                            <a href="#"><img src="assets/facebook.svg" alt="facebook" class="facebook icon"></a>
-                            <a href="#"><img src="assets/google.svg" alt="google" class="google icon"></a>
-                            <a href="#"><img src="assets/twitter.svg" alt="twitter" class="twitter icon"></a>
-                            <a href="#"><img src="assets/linkedin.svg" alt="linkedin" class="linked icon"></a>
+                            <a><img src="assets/facebook.svg" alt="facebook" class="facebook icon"></a>
+                            <a><img src="assets/google.svg" alt="google" class="google icon"></a>
+                            <a><img src="assets/twitter.svg" alt="twitter" class="twitter icon"></a>
+                            <a><img src="assets/linkedin.svg" alt="linkedin" class="linked icon"></a>
                         </div>
                     </div>
                 </div>
@@ -167,17 +189,17 @@
                         <h3 class="name">Scolara Visari</h3>
                         <h4 class="name-text"><span>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet</span> turpis, et consequat felis. Quisque condimentum.</h4>
                         <div class="icons">
-                            <a href="#"><img src="assets/facebook.svg" alt="facebook" class="facebook icon"></a>
-                            <a href="#"><img src="assets/google.svg" alt="google" class="google icon"></a>
-                            <a href="#"><img src="assets/twitter.svg" alt="twitter" class="twitter icon"></a>
-                            <a href="#"><img src="assets/linkedin.svg" alt="linkedin" class="linked icon"></a>
+                            <a><img src="assets/facebook.svg" alt="facebook" class="facebook icon"></a>
+                            <a><img src="assets/google.svg" alt="google" class="google icon"></a>
+                            <a><img src="assets/twitter.svg" alt="twitter" class="twitter icon"></a>
+                            <a><img src="assets/linkedin.svg" alt="linkedin" class="linked icon"></a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
-        <section>
+        <section id="anchor5">
             <div class="header-container">
                 <div class="quote">
                     <h1 class="quote-text">Get a Quote</h1>
@@ -187,13 +209,26 @@
                         mauris condimentum nibh.</p>
                 </div>
                 <div class="contact-data">
-                    <form action="#" class="contact-form" method="post">
+                    <form action="#" class="contact-form" method="post" id="form">
                         <input class="form-input" type="text" name="name" required placeholder="Name (Required)" required>
                         <input class="form-input" type="email" name="email" required placeholder="Email (Required)" required>
-                        <input class="form-input" type="text" name="subject" placeholder="Subject">
-                        <textarea class="form-textarea" name="message" placeholder="Describe your project in detail..."></textarea>
-                        <button class="form-button" type="submit">Submit</button>
+                        <input class="form-input" type="text" name="subject" id="subject" placeholder="Subject">
+                        <textarea class="form-textarea" name="message" id="description" placeholder="Describe your project in detail..."></textarea>
+                        <button class="form-button" type="submit" id="submit">Submit</button>
                     </form>
+                    <div id="message-block" class="hidden">
+                        <div id="message">
+                            <span id="result">The letter was sent!</span>
+                            <br>
+                            <br>
+                            <span id="subject_msg"></span>
+                            <br>
+                            <span id="description_msg"></span>
+                            <br>
+                            <br>
+                            <button id="close">OK</button>
+                        </div>
+                    </div>
                     <div class="contact-info">
                         <h1 class="contact-info-title">Contact Information</h1>
                         <p class="contact-info-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctuc faucibus. Morbi at aliquet turpis, et consequat felis.</p>
@@ -218,13 +253,15 @@
                 <p class="copyright">© Copyright 2013</p>
             </div>
             <div class="social-media">
-                <a href="#"><img src="assets/facebook.svg" alt="facebook" class="facebook icon"></a>
-                <a href="#"><img src="assets/google.svg" alt="google" class="google icon"></a>
-                <a href="#"><img src="assets/twitter.svg" alt="twitter" class="twitter icon"></a>
-                <a href="#"><img src="assets/linkedin.svg" alt="linkedin" class="linked icon"></a>
+                <a><img src="assets/facebook.svg" alt="facebook" class="facebook icon"></a>
+                <a><img src="assets/google.svg" alt="google" class="google icon"></a>
+                <a><img src="assets/twitter.svg" alt="twitter" class="twitter icon"></a>
+                <a><img src="assets/linkedin.svg" alt="linkedin" class="linked icon"></a>
 
             </div>
 
         </footer>
     </div>
+    </div>
+    <script src="script.js"></script>
 </body>
