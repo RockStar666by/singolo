@@ -80,19 +80,22 @@ const IMG = document.getElementById('images');
 
 
 MENU.addEventListener('click', (event) => {
+
     MENU.querySelectorAll('.menu-text').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
+    menu_function();
+
 });
 
 MENU2.addEventListener('click', (event) => {
     MENU2.querySelectorAll('.tag').forEach(elem => elem.classList.remove('active2'));
     event.target.classList.add('active2');
-    let imageList = IMG.getElementsByTagName('img');
+    let imageList = IMG.getElementsByTagName('li');
     let temp;
     for (let i = 0; i < imageList.length - 1; i++) {
-        temp = imageList[i].src;
-        imageList[i].src = imageList[i + 1].src;
-        imageList[i + 1].src = temp;
+        temp = imageList[i].innerHTML;
+        imageList[i].innerHTML = imageList[i + 1].innerHTML;
+        imageList[i + 1].innerHTML = temp;
     }
 });
 
@@ -103,7 +106,6 @@ IMG.addEventListener('click', (event) => {
 
 
 // form message
-
 const BUTTON = document.getElementById('submit');
 const CLOSE_BUTTON = document.getElementById('close');
 const GET_FORM = document.getElementById('form');
@@ -133,19 +135,6 @@ CLOSE_BUTTON.addEventListener('click', () => {
 });
 
 // sticky header
-
-window.onscroll = function() { myFunction() };
-const home = document.getElementById("myHeader");
-const sticky = home.offsetTop;
-
-function myFunction() {
-    if (window.pageYOffset > sticky) {
-        home.classList.add("sticky");
-    } else {
-        home.classList.remove("sticky");
-    }
-}
-
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -159,4 +148,20 @@ for (let anchor of anchors) {
             block: 'start'
         })
     })
+}
+
+// side menu bar function
+function menu_function() {
+    let x = document.getElementById("navbar");
+    let x2 = document.getElementById("burger-button");
+    let x3 = document.getElementById("logo-home");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+        x2.className += " rotate";
+        x3.className += " move";
+    } else {
+        x.className = "navbar";
+        x2.className = "burger-button";
+        x3.className = "logo-home";
+    }
 }
